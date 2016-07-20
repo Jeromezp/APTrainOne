@@ -10,11 +10,7 @@
             font-family: "Microsoft YaHei UI", Helvetica, Arial, sans-serif;
         }
 
-        .navbar-brand {
-            padding: 5px 15px;
-        }
-
-        .menu, .menu-list {
+        .menu, .menu-list{
             padding: 0px;
             margin: 0px;
         }
@@ -35,7 +31,8 @@
             color: #000;
             line-height: 4em;
             display: block;
-            padding: 0 21px;
+            /*padding: 0 21px;*/
+            margin: 0 21px;
             text-decoration: none;
         }
 
@@ -47,19 +44,30 @@
             border-bottom: 1px solid #eeeeee;
         }
 
+        .wrapper:nth-last-child(1) {
+            padding-bottom: 10em;
+        }
+
         .page-header {
             border: none;
         }
 
-        .footer{
+        .footer {
             background-color: #515151;
             height: 12em;
         }
 
-        .footer .menu{
+        .footer .menu {
             color: #ffffff;
             text-align: center;
-            line-height: 12em;
+        }
+
+        .wrapper ul {
+            padding: 14px;
+        }
+
+        .wrapper h3 {
+            margin-bottom: 2em;
         }
     </style>
 </head>
@@ -68,9 +76,9 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-                <img alt="ThinkGeo" src="./image/think-geo-logo.png">
-            </a>
+            <!--<a class="navbar-brand" href="#">-->
+            <!--<img alt="ThinkGeo" src="./image/think-geo-logo.png">-->
+            <!--</a>-->
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -82,12 +90,22 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="menu">
+
+            <ul class="menu center-block">
+                <li>
+                    <a href=""><img alt="ThinkGeo" src="./image/think-geo-logo.png"></a>
+                </li>
                 <li><a href="#">关于我们</a></li>
                 <li><a href="#">业务方向</a></li>
                 <li><a href="#">企业动态</a></li>
                 <li class="nav-current"><a href="#">工作机会<span class="sr-only">(current)</span></a></li>
+
+                <li><a href="">asdf</a></li>
+                <li><a href="">werw</a></li>
+                <li><a href="">tyut</a></li>
             </ul>
+
+
         </div>
         <!-- /.navbar-collapse -->
     </div>
@@ -106,10 +124,10 @@
         <p class="text-left">当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML
             的当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的</p>
         <p class="text-center"><strong>诚邀您的加盟</strong></p>
-        <p class="text-left">简历请发送到<a href="">cdhr@thinkgeo.com</a>，我们将与您及时取得联系</p>
+        <p class="text-left">简历请发送到<a href="mailto:cdhr@thinkgeo.com">cdhr@thinkgeo.com</a>，我们将与您及时取得联系</p>
     </div>
     <div class="wrapper">
-        <h3>招聘职位</h3>
+        <h3><strong>招聘职位</strong></h3>
         <ul class="menu-list">
             <li><a href="">Web高级开发工程师</a></li>
             <li><a href="">Web开发工程师</a></li>
@@ -118,22 +136,22 @@
         </ul>
     </div>
     <div class="wrapper">
-        <h3>贴心的福利体系</h3>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <h3><strong>贴心的福利体系</strong></h3>
+        <ul class="menu-list">
+            <li>具有竞争力的薪资体系和奖励制度</li>
+            <li>集团内的培训、转勤计划、为员工提供海外培训和工作机会</li>
+            <li>灵活的弹性工作时间</li>
+            <li>有薪特别年假</li>
+            <li>严格执行法定福利制度</li>
+            <li>安心的商业保险计划</li>
+            <li>贴心的特殊慰问礼金</li>
+            <li>各种俱乐部活动，为员工提供丰富多彩的业余活动</li>
+            <li>定期对有突出贡献得员工进行表彰</li>
         </ul>
     </div>
     <div class="wrapper">
-        <h3>量身定制的职业规划和培训体制</h3>
-        <ul>
+        <h3><strong>量身定制的职业规划和培训体制</strong></h3>
+        <ul class="menu-list">
             <li>入门导师体制</li>
             <li>开发个人职业发展计划</li>
             <li>参加转门的技术培训</li>
@@ -144,13 +162,22 @@
 </div>
 <footer class="container-fluid footer">
     <ul class="menu">
-        <li><img src="" alt=""></li>
-        <li><p>当今社会，人们非常依赖计算机以及计算机处理过的信息。在计算机时代，信息系统部分或全部由计算机系统支持，因此，计算机硬件、软件、数据和用户是信息系统的四大要素。其中，计算机硬件包括各类计算机处理及终端设备；软件是支持数据信息的采集、存贮加工、再现和回答用户问题的计算机程序系统；数据则是系统分析与处理的对象，构成系统的应用基础；用户是信息系统所服务的对象。</p></li>
+        <li><img src="./image/top_thinkgeo_logo.png" alt=""></li>
+        <li>
+            <p class="text-left">
+                当今社会，人们非常依赖计算机以及计算机处理过的信息。
+            </p>
+            <p class="text-left">
+                在计算机时代，信息系统部分或全部由计算机系统支持，因此，计算机硬件、软件、数据和用户是信息系统的四大要素。
+            </p>
+            <p class="text-left">
+                其中，计算机硬件包括各类计算机处理及终端设备；软件是支持数据信息的采集、存贮加工、再现和回答用户问题的计算机程序系统；数据则是系统分析与处理的对象，构成系统的应用基础；用户是信息系统所服务的对象。
+            </p>
+        </li>
         <li><img src="" alt=""></li>
     </ul>
 </footer>
 </body>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
-
 </html>
