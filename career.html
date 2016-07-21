@@ -17,10 +17,11 @@
         .navbar-default {
             background-color: #ffffff;
         }
-        .menu{
-             text-align:center;
+        
+        .menu {
+            text-align: center;
         }
-
+        
         .menu,
         .menu-list {
             padding: 0px;
@@ -51,12 +52,12 @@
         .menu-list {
             padding: 14px;
         }
-
-        .menu-list-sub{
-            padding-left:10em;
+        
+        .menu-list-sub {
+            padding-left: 10em;
         }
-
-        li.menu-list-sub a{
+        
+        li.menu-list-sub a {
             font-weight: 400;
             font-size: 13px;
             margin: 0 8px;
@@ -77,12 +78,17 @@
         
         .footer {
             background-color: #515151;
-            height: 12em;
+            height: 18em;
         }
         
         .footer .menu {
             color: #ffffff;
             text-align: center;
+        }
+        
+        .footer .col-sm-4 {
+            top: 7em;
+            color: #ffffff
         }
     </style>
 </head>
@@ -94,8 +100,7 @@
                 <!--<a class="navbar-brand" href="#">
                 <img alt="ThinkGeo" src="./image/think-geo-logo.png">
             </a>-->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -130,8 +135,7 @@
             <p class="text-left">当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的当鼠标悬停在缩写和缩写词上时</p>
             <p class="text-left">当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的
             </p>
-            <p class="text-left">当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap
-                实现了对 HTML 的</p>
+            <p class="text-left">当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的</p>
             <p class="text-center"><strong>诚邀您的加盟</strong></p>
             <p class="text-left">简历请发送到<a href="">cdhr@thinkgeo.com</a>，我们将与您及时取得联系</p>
         </div>
@@ -170,15 +174,22 @@
         </div>
     </div>
     <footer class="container-fluid footer">
-        <ul class="menu">
-            <li><img src="" alt=""></li>
-            <li>
+        <!--<ul class="menu">
+            <li class="col-sm-4"><img src="./image/top_thinkgeo_logo.png" alt="" class="pull-right"></li>
+            <li class="col-sm-4">
                 <p>
                     当今社会，人们非常依赖计算机以及计算机处理过的信息。在计算机时代，信息系统部分或全部由计算机系统支持，因此，计算机硬件、软件、数据和用户是信息系统的四大要素。其中，计算机硬件包括各类计算机处理及终端设备；软件是支持数据信息的采集、存贮加工、再现和回答用户问题的计算机程序系统；数据则是系统分析与处理的对象，构成系统的应用基础；用户是信息系统所服务的对象。
                 </p>
             </li>
-            <li><img src="" alt=""></li>
-        </ul>
+            <li class="col-sm-4"><img src="./image" alt=""></li>
+        </ul>-->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-4"><img src="./image/top_thinkgeo_logo.png" alt="" class="pull-right"></div>
+                <div class="col-sm-4">当今社会，人们非常依赖计算机以及计算机处理过的信息。在计算机时代，信息系统部分或全部由计算机系统支持，因此，计算机硬件、软件、数据和用户是信息系统的四大要素。其中，计算机硬件包括各类计算机处理及终端设备；软件是支持数据信息的采集、存贮加工、再现和回答用户问题的计算机程序系统；数据则是系统分析与处理的对象，构成系统的应用基础；用户是信息系统所服务的对象。</div>
+                <div class="col-sm-4"><img src="./image/top_thinkgeo_logo.png" alt=""></div>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="./js/jquery.min.js"></script>
