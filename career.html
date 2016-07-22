@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <style>
         * {
-            font-family: "Microsoft YaHei UI", Helvetica, Arial, sans-serif;
-            font-size: 12px;
+            font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
+            font-size: 13px;
+        }
+        
+        h3 strong {
+            font-size: 20px;
         }
         /*nav*/
-        
-        .navbar-brand {
-            padding: 5px 15px;
-        }
         
         .navbar-default {
             background-color: #ffffff;
@@ -26,14 +26,16 @@
         
         .menu,
         .menu-list {
-            padding: 0px;
-            margin: 0px;
+            padding: 0;
+            margin: 0;
         }
         
         .menu li {
+            font-size: 14px;
             list-style: none;
             display: inline-block;
             position: relative;
+            height: 4em;
         }
         
         .menu li.nav-current a {
@@ -42,7 +44,7 @@
         }
         
         .menu li a {
-            font-weight: 400;
+            font-size: 14px;
             color: #000;
             line-height: 4em;
             display: block;
@@ -50,19 +52,39 @@
             text-decoration: none;
         }
         
+        .menu li a img {
+            height: 3em;
+        }
+        
         .menu-list {
-            padding: 14px;
+            padding: 1em;
+            line-height: 2em;
         }
         
         .menu-list-sub {
+            font-size: 14px;
             padding-left: 10em;
         }
         
         li.menu-list-sub a {
             font-weight: 400;
-            font-size: 13px;
-            margin: 0 8px;
+            height: 4em;
+            margin: 0;
             display: inline-block;
+            /*font-size: 12px;*/
+            color: #696262;
+        }
+        
+        .nav-right-icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            background-image: url(./image/thinkgeo_right_logo.png);
+            width: 1.5em;
+            height: 1.5em;
+            background-size: cover;
+            position: relative;
+            margin: -0.5em 0.2em;
         }
         /*container*/
         
@@ -72,6 +94,10 @@
         
         .wrapper:nth-child(n+1) {
             border-bottom: 1px solid #eeeeee;
+        }
+        
+        .wrapper h3 {
+            margin-bottom: 2em;
         }
         
         .page-header {
@@ -108,9 +134,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <!--<a class="navbar-brand" href="#">
-                <img alt="ThinkGeo" src="./image/think-geo-logo.png">
-            </a>-->
+
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -119,17 +143,21 @@
             </button>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="menu">
                     <li>
-                        <img alt="ThinkGeo" src="./image/think-geo-logo.png" style="padding-bottom:14px;">
+                        <a href=""><img alt="ThinkGeo" src="./image/thinkgeo_top_logo.png"></a>
                     </li>
                     <li><a href="#">关于我们</a></li>
                     <li><a href="#">业务方向</a></li>
                     <li><a href="#">企业动态</a></li>
                     <li class="nav-current"><a href="#">工作机会<span class="sr-only">(current)</span></a></li>
-                    <li class="menu-list-sub"><a href="">开发中心 </a><a href="">English </a><a href="">客户端登录</a></li>
+                    <li class="menu-list-sub">
+                        <a href="">开发中心&nbsp;&nbsp;|</a>
+                        <a href="">
+                            <span class="nav-right-icon"></span>English&nbsp;&nbsp;|</a>
+                        <a href="">&nbsp;&nbsp;客户端登录</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -150,7 +178,7 @@
             <p class="text-left">
                 ThinkGeo鼓励创新思想，相信只有思维创新才能成就不一般的产品和服务；我们提倡团队精神，同时尊重个体的差异，正是由于每一位个体的不同，才造就了ThinkGeo的与众不同
             </p>
-            <p class="text-center"><strong>诚邀您的加盟</strong></p>
+            <p style="padding:2em 4em"><strong>诚邀您的加盟</strong></p>
             <p class="text-left">简历请发送到 <a href="" style="color:#E81BCE">cdhr@thinkgeo.com</a>，我们将与您及时取得联系</p>
         </div>
         <div class="wrapper">
@@ -188,15 +216,6 @@
         </div>
     </div>
     <footer class="container-fluid footer">
-        <!--<ul class="menu">
-            <li class="col-sm-4"><img src="./image/top_thinkgeo_logo.png" alt="" class="pull-right"></li>
-            <li class="col-sm-4">
-                <p>
-                    当今社会，人们非常依赖计算机以及计算机处理过的信息。在计算机时代，信息系统部分或全部由计算机系统支持，因此，计算机硬件、软件、数据和用户是信息系统的四大要素。其中，计算机硬件包括各类计算机处理及终端设备；软件是支持数据信息的采集、存贮加工、再现和回答用户问题的计算机程序系统；数据则是系统分析与处理的对象，构成系统的应用基础；用户是信息系统所服务的对象。
-                </p>
-            </li>
-            <li class="col-sm-4"><img src="./image" alt=""></li>
-        </ul>-->
         <div class="row">
             <div class="col-sm-12">
                 <div class="col-sm-4"><img src="./image/top_thinkgeo_logo.png" alt="" class="pull-right"></div>
@@ -205,10 +224,10 @@
                         成都思宙信息科技（思宙科技）是一家集软件开发，实施，以及软件资讯为一体的软件服务提供商为企业刻画的商业成功提共高 水准的开发工具，软件开发和商业咨询服务。在不断向全球化发展过程中，思宙科技始终坚持扎实的技术能力，敏感的前沿动态观察，和崇高的道德水准， 致力于成为客户可以长久信赖的合作伙伴。
                     </p>
                     <div class="footer-detail">
-                        <a href="#">隐私政策</a>| <a href="">连接我们</a>
+                        <a href="#">隐私政策</a> | <a href="">连接我们</a>
                     </div>
                 </div>
-                <div class="col-sm-4"><img src="./image/top_thinkgeo_logo.png" alt=""></div>
+                <div class="col-sm-4"><img src="./image/thinkgeo_bottom_logo.png" alt=""></div>
             </div>
         </div>
     </footer>
