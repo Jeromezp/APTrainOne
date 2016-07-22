@@ -65,7 +65,7 @@ h3 strong {
 
 .menu-list-sub {
     font-size: 14px;
-    padding-left: 4em;
+    padding-left: 10em;
 }
 
 li.menu-list-sub a {
@@ -148,16 +148,25 @@ li.menu-list-sub a {
 
 /*media */
 
-@media screen and (max-width: 992px) {
-    .menu li {
-        display: block;
+@media screen and (max-width: 1074px) {
+    .menu li:nth-last-child(1) {
+        display: none;
     }
-    .menu-list-sub {
-        padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .footer p {
+        line-height: normal;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .menu li:nth-last-child(1) {
+        display: block;
+    }
+    .menu li {
+        display: block;
+    }
     footer {
         display: none;
     }
