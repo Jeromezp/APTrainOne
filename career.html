@@ -11,6 +11,12 @@
             font-size: 13px;
         }
         
+        .menu,
+        .menu-list {
+            padding: 0;
+            margin: 0;
+        }
+        
         h3 strong {
             font-size: 20px;
         }
@@ -71,7 +77,6 @@
             height: 4em;
             margin: 0;
             display: inline-block;
-            /*font-size: 12px;*/
             color: #696262;
         }
         
@@ -96,12 +101,16 @@
             border-bottom: 1px solid #eeeeee;
         }
         
-        .wrapper h3 {
-            margin-bottom: 2em;
+        .wrapper:nth-last-child(1) {
+            padding-bottom: 10em;
         }
         
         .page-header {
             border: none;
+        }
+        
+        .wrapper h3 {
+            margin-bottom: 2em;
         }
         
         .footer {
@@ -112,6 +121,14 @@
         .footer .menu {
             color: #ffffff;
             text-align: center;
+        }
+        
+        .wrapper ul {
+            padding: 14px;
+        }
+        
+        .wrapper h3 {
+            margin-bottom: 2em;
         }
         
         .footer .col-sm-4 {
@@ -134,7 +151,6 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -142,7 +158,6 @@
                 <span class="icon-bar"></span>
             </button>
             </div>
-
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="menu">
                     <li>
@@ -215,6 +230,7 @@
             </ul>
         </div>
     </div>
+
     <footer class="container-fluid footer">
         <div class="row">
             <div class="col-sm-12">
