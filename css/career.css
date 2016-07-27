@@ -3,6 +3,7 @@
 * {
     font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
     font-size: 13px;
+    color: #111111;
 }
 
 .menu,
@@ -17,6 +18,11 @@ h3 strong {
 
 
 /*nav*/
+
+small {
+    font-family: "";
+    color: #D3D3D3
+}
 
 .navbar-default {
     background-color: #ffffff;
@@ -33,11 +39,11 @@ h3 strong {
 }
 
 .menu li {
-    font-size: 14px;
+    font-size: 16px;
     list-style: none;
     display: inline-block;
     position: relative;
-    height: 4em;
+    /*height: 4.5em;*/
 }
 
 .menu li.nav-current a {
@@ -46,16 +52,12 @@ h3 strong {
 }
 
 .menu li a {
-    font-size: 14px;
+    font-size: 16px;
     color: #000;
-    line-height: 4em;
+    line-height: 4.5em;
     display: block;
     margin: 0 21px;
     text-decoration: none;
-}
-
-.menu li a img {
-    height: 3em;
 }
 
 .menu-list {
@@ -64,13 +66,14 @@ h3 strong {
 }
 
 .menu-list-sub {
-    font-size: 14px;
-    padding-left: 17em;
+    font-size: 16px;
+    margin-left: 10em;
 }
 
 li.menu-list-sub a {
+    font-size: 13px;
     font-weight: 400;
-    height: 4em;
+    height: 4.5em;
     margin: 0;
     display: inline-block;
     color: #696262;
@@ -91,20 +94,30 @@ li.menu-list-sub a {
 
 /*container*/
 
+.page-header {
+    margin: 0;
+}
+
+.page-header h1 {
+    margin: 0 0 2em 0;
+    font-size: 32px;
+}
+
+.page-header {
+    padding-bottom: 0;
+    border: none;
+}
+
 .wrapper {
-    padding: 4em;
+    padding: 3em 3em;
 }
 
 .wrapper:nth-child(n+1) {
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #D2D2D2;
 }
 
 .wrapper:nth-last-child(1) {
     padding-bottom: 10em;
-}
-
-.page-header {
-    border: none;
 }
 
 .wrapper h3 {
@@ -119,36 +132,39 @@ li.menu-list-sub a {
     margin-bottom: 2em;
 }
 
+.wrapper p {
+    margin: 0 0 1em 0;
+}
+
 
 /*footer*/
 
 .footer {
+    color: #ffffff;
     background-color: #515151;
     height: 18em;
 }
 
-.footer .menu {
-    color: #ffffff;
-    text-align: center;
-}
-
-.footer .col-sm-4 {
+.footer .row > div {
     top: 3em;
-    color: #ffffff
 }
 
-.footer-detail a {
+.footer div,
+.footer-detail a,
+.footer p {
     color: #ffffff;
 }
 
-.footer p {
-    line-height: 2em;
+.footer-left-logo {
+    text-align: right;
+    position: relative;
+    top: 2em;
 }
 
 
 /*media */
 
-@media screen and (max-width: 1074px) {
+@media screen and (max-width: 1190 px) {
     .menu li:nth-last-child(1) {
         display: none;
     }
@@ -157,6 +173,7 @@ li.menu-list-sub a {
 @media screen and (max-width: 992px) {
     .footer p {
         line-height: normal;
+        letter-spacing: 0;
     }
 }
 
@@ -167,10 +184,16 @@ li.menu-list-sub a {
     .menu li {
         display: block;
     }
+    .menu li a {
+        line-height: 2.8em;
+    }
     footer {
         display: none;
     }
     .menu-list-sub {
         padding: 0;
+    }
+    .menu-list-sub:nth-last-child(1) {
+        margin: 0;
     }
 }
