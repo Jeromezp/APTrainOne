@@ -143,10 +143,11 @@ li.menu-list-sub a {
     color: #ffffff;
     background-color: #515151;
     height: 18em;
+    overflow-x: hidden;
 }
 
 .footer .row > div {
-    top: 3em;
+    top: 4em;
 }
 
 .footer div,
@@ -155,10 +156,20 @@ li.menu-list-sub a {
     color: #ffffff;
 }
 
+.footer p {
+    color: #ffffff;
+    line-height: 2em;
+    letter-spacing: 0.1em
+}
+
 .footer-left-logo {
     text-align: right;
     position: relative;
     top: 2em;
+}
+
+.footer-detail {
+    margin: 3em 0 0 0;
 }
 
 
